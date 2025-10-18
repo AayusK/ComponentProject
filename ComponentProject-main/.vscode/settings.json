@@ -32,7 +32,7 @@
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "ComponentProject-main/lib/components.jar"
     ],
     "java.saveActions.cleanup": true,
     "java.cleanup.actions": [
