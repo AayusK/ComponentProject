@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "ComponentProject-main\\src"
+    ],
+    "java.project.referencedLibraries": [
+        "ComponentProject-main\\lib\\components.jar"
+    ]
+}
