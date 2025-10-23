@@ -7,13 +7,22 @@ and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
 
+## 2025.10.23
+
+### Added 
+- Designed kernel and enhanced interfaces for NebulaNest component 
+
+### Updated
+- Changed distanceTo 
+
 ## 2025.10.17
 
-###Added
+### Added
 
 -Completed proof of concept for NebulaNest
 - Added addNode(), isEmpty(), and getRoot()
 - Added nestCluster(), 
+
 ## 2025.10.17
 
 ### Added
