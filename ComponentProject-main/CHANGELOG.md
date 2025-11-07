@@ -7,6 +7,16 @@ and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
 
+## 2025.11.06
+
+### Added
+
+- Designed abstract class for NebulaNest component
+
+### Updated
+
+- Changed design to include an abstract secondary NebulaNest class, created nestCluster, queryDensity, getSize, removeNode, toString, and equals.
+
 ## 2025.10.23
 
 ### Added 
