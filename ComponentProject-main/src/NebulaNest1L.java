@@ -38,7 +38,7 @@ public class NebulaNest1L extends NebulaNestSecondary {
      * Constructors
      */
 
-    /**
+    /*
      * No-arg constructor.
      */
     public NebulaNest1L() {
