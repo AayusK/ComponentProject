@@ -1,3 +1,5 @@
+package components.nebulanest;
+
 import components.naturalnumber.NaturalNumber;
 import components.naturalnumber.NaturalNumber2;
 import components.queue.Queue;
@@ -18,14 +20,13 @@ public abstract class NebulaNestSecondary implements NebulaNest {
     // Proximity threshold constant for clustering
     private static final int PROXIMITY_THRESHOLD = 100;
 
-
     @Override
     public final void nestCluster(Set<Node> affinities) {
 
         // If the nest or affinities is empty there's nothing to cluster
         if (!this.isEmpty() && affinities.size() > 0) {
 
-            // Stack to traverse through tree 
+            // Stack to traverse through tree
             Stack<Node> toProcess = new Stack1L<>();
             toProcess.push(this.getRoot());
 
@@ -106,7 +107,7 @@ public abstract class NebulaNestSecondary implements NebulaNest {
         NaturalNumber size = new NaturalNumber2(0);
 
         if (!this.isEmpty()) {
-            // Stack to traverse through tree 
+            // Stack to traverse through tree
             Stack<Node> toProcess = new Stack1L<>();
             toProcess.push(this.getRoot());
 
@@ -118,7 +119,7 @@ public abstract class NebulaNestSecondary implements NebulaNest {
                 Queue<Node> children = current.getChildren();
                 int childCount = children.length();
                 for (int i = 0; i < childCount; i++) {
-                    
+
                     Node child = children.dequeue();
                     toProcess.push(child);
                     children.enqueue(child);
@@ -162,8 +163,7 @@ public abstract class NebulaNestSecondary implements NebulaNest {
                         // If target is found don't add it back to the queue
                         found = true;
                         targetRemoved = true;
-                    } 
-                    else {
+                    } else {
                         temp.enqueue(child);
 
                         if (!found) {
@@ -185,11 +185,10 @@ public abstract class NebulaNestSecondary implements NebulaNest {
     @Override
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        
+
         if (this.isEmpty()) {
             sb.append("NebulaNest[]");
-        } 
-        else {
+        } else {
             sb.append("NebulaNest[\n");
 
             // Use stack to traverse
@@ -230,7 +229,7 @@ public abstract class NebulaNestSecondary implements NebulaNest {
 
             sb.append("]");
         }
-        
+
         return sb.toString();
     }
 
@@ -240,15 +239,13 @@ public abstract class NebulaNestSecondary implements NebulaNest {
 
         if (this == obj) {
             result = true;
-        } 
-        else if (obj != null && obj instanceof NebulaNest) {
+        } else if (obj != null && obj instanceof NebulaNest) {
             NebulaNest other = (NebulaNest) obj;
 
             // Both are empty
             if (this.isEmpty() && other.isEmpty()) {
                 result = true;
-            } 
-            else if (!this.isEmpty() && !other.isEmpty()) {
+            } else if (!this.isEmpty() && !other.isEmpty()) {
                 // Use comparison with two stacks
                 Stack<Node> stack1 = new Stack1L<>();
                 Stack<Node> stack2 = new Stack1L<>();
@@ -273,8 +270,7 @@ public abstract class NebulaNestSecondary implements NebulaNest {
 
                         if (children1.length() != children2.length()) {
                             equal = false;
-                        } 
-                        else {
+                        } else {
 
                             // Adds children to stacks for comparison
                             int childCount = children1.length();

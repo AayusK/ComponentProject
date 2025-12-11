@@ -1,3 +1,5 @@
+package components.nebulanest;
+
 import components.standard.Standard;
 import components.queue.Queue;
 import components.queue.Queue1L;
@@ -6,11 +8,11 @@ import components.queue.Queue1L;
  * Kernel implementation of NebulaNest using a simple tree structure.
  * 
  * @convention
- * [root is the root node of the tree]
- * [if root is null, the nest is empty]
- * [all nodes in the tree are reachable from root
+ *             [root is the root node of the tree]
+ *             [if root is null, the nest is empty]
+ *             [all nodes in the tree are reachable from root]
  * @correspondence
- * this = [the tree rooted at root]
+ *                 this = [the tree rooted at root]
  * 
  * @author Aayus Keshri
  */
@@ -20,12 +22,10 @@ public class NebulaNest1L extends NebulaNestSecondary {
      * Private members
      */
 
-
     /**
      * Root of the tree.
      */
     private Node root;
-
 
     /**
      * Create initial representation.
@@ -90,7 +90,7 @@ public class NebulaNest1L extends NebulaNestSecondary {
         if (parent == null) {
             assert this.isEmpty() : "Violation of: parent is null implies this is empty";
             this.root = newNode;
-        } else {            
+        } else {
             Queue<Node> children = parent.getChildren();
             children.enqueue(newNode);
         }

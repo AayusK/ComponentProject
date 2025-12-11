@@ -6,15 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2025.12.10
 
 ### Added
 
-- Designed kernel implementation for NebulaNest component
+- Designed test suite for NebulaNest component (NebulaNestTest, NebulaNest1LTest)
+- Designed two different use cases for NebulaNest component (NebulaNestDemo, StarMap)
+- Created BasicNode helper class for testing
 
 ### Updated
 
-- Changed design to include implementations in NebulaNest1L CreateNewRep(), newInstance(), clear(), transferFrom(), isEmpty(), addNode(), and getRoot. 
+- Refactored NebulaNest component into `components.nebulanest` package
+- Completed finishing touches documentation and reflection 
 
 
 ## 2025.10.23
