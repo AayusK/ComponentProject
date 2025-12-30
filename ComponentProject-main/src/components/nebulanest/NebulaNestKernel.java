@@ -1,9 +1,12 @@
+package components.nebulanest;
+
 import components.naturalnumber.NaturalNumber;
 import components.queue.Queue;
 import components.standard.Standard;
 
 /**
- * Kernel interace for NebulaNest, a mutable tree structure for organizing nodes by proximity
+ * Kernel interace for NebulaNest, a mutable tree structure for organizing nodes
+ * by proximity
  * 
  * @author Aayus Keshri
  */
